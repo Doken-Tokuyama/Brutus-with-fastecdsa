@@ -2,7 +2,7 @@
 Brutus with fastecdsa
 Brutus Bitcoin Private Key Brute Forcer with fastecdsa
 
-Brutus with fastecdsais a modified copy of Plutus with fastecdsa from imcmurray
+Brutus with fastecdsa is a modified copy of Plutus with fastecdsa from imcmurray
 
 Origin: https://github.com/imcmurray/Plutus-fastecdsa
 
@@ -14,7 +14,8 @@ Then start it with
 
 python3 brutus.py
 
-Requirements for python ist fastecdsa
+# Requirements for python it's fastecdsa
+
 Try for example with with pip install fastecdsa
 
 fastecdsa need GMP install. Example for Centos: yum install gmp-devel
@@ -63,7 +64,7 @@ However, if a balance is found, then all necessary information about the wallet 
 
 # Memory Consumption
 
-This program uses approximately 2GB of RAM per CPU. Becuase this program uses multiprocessing, some data gets shared between threads, making it difficult to accurately measure RAM usage. But the stack trace below is as precise as I could get it:
+This program uses approximately 2GB of RAM per CPU. Because this program uses multiprocessing, some data gets shared between threads, making it difficult to accurately measure RAM usage. But the stack trace below is as precise as I could get it:
 
 ![Imgur](https://i.imgur.com/9Cq0yf3.png)
 
@@ -76,6 +77,7 @@ The memory consumption stack trace was made by using <a href="https://pypi.org/p
 - [X] Database now only has P2PKH addresses. Addresses of other types have been removed
 
 - [X] Fastecdsa support for faster public key creation
+
 
 Have fun with it and good luck.
 
