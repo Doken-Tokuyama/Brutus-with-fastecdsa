@@ -11,7 +11,7 @@ import multiprocessing
 import pickle
 from fastecdsa import keys, curve
 
-BTC='17MXanLRMjTy4uYMArdmVJa1ramLp6epk5'
+BTC='19eA3hUfKRt7aZymavdQFXg5EZ6KCVKxr8'
 
 os.mkdir('db')
 coinadress ={ BTC }
@@ -74,7 +74,10 @@ def process(private_key, public_key, address, database):
                        'address: ' + str(address) + '\n\n')
                        #'WIF private key: ' + str(private_key_to_WIF(private_key)) + '\n' +
     else: 
-         print(str(address) + '  -> find ->' + str(database))
+         print(str(address) + '\n' +
+                        'public key: ' + str(public_key) + '\n' +
+                        'address: ' + str(address) + '\n' +
+                         '  -> find ->' + str(database) + '\n\n')
 
 def private_key_to_WIF(private_key):
     """Convert the hex private key into Wallet Import Format for easier wallet importing. This function is 
